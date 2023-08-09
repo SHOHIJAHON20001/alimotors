@@ -9,14 +9,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-head {
-  background-color: #efefef;
-}
+
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: #efefef;
 }
 
 a {
