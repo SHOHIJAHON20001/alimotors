@@ -81,8 +81,7 @@
               <div class="portfolio-info">
                 <h4>{{ galareya.model }}</h4>
                 <div class="portfolio-links">
-                  <a href="{{ galareya.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="{% url 'gallery_details' galareya.id %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">Batafsil</i></a>
+                  <a href="{% url 'gallery_details' galareya.id %}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Batafsil">Batafsil</i></a>
                 </div>
               </div>
               {% endfor %}
