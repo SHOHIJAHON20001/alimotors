@@ -1,0 +1,50 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<br><br><br><br>
+<h1><center><strong> Avtomobil Xarakteristikasi </strong></center></h1>
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{ galareyas.image.url }}" alt="">
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Avtomobil Xarakteristikasi</h3>
+              <ul>
+                <li><strong>Model</strong>: {{ galareyas.model }}</li>
+                <li><strong>Gibrid</strong>: {{ galareyas.gibrid }}</li>
+                <li><strong>Yuqori tezlik</strong>: {{ galareyas.max_speed }} km/s</li>
+                <li><strong>Mator</strong>: {{ galareyas.motor }} L</li>
+                <li><strong>Passajirlar soni</strong>: {{ galareyas.passangers }} ta</li>
+                <li><strong>Batareya hajmi</strong>: {{ galareyas.battery_capacity }} kwh</li>
+                <li><strong>maksimal sayohat oralig'i</strong>: {{ galareyas.max_cruising_range }} km/s</li>
+            </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

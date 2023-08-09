@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Biz haqimizda</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Asosiy</a></li>
+            <li>Biz haqimizda</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs --> <br>
+    <center><h1 class="column-title"><strong> Biz haqimizda</strong></h1></center>
+    <section id="main-container" class="main-container">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+              <p>Bizning dilerlik keng ko’lamli xizmatlarga ega, shuningdek bir qancha brendlar bilan hamkorlikda ishlab kelmoqda va xizmat ko’rsatish standartlarini to’liq kafolatlaydi. Rasmiy dilerlik o’z ixtiyorida keng ko’rgazma zaliga ega bo’lib, mavjud "build your dreams" "NETA", "Chevrolet monza" va yana ko'plab avtomobillariga e’tiborni qaratishga yordam beradi. Ko’rgazma zalimizning yana bir xususiyati yuqori malakali jamoadir. Mijozlar bilan ishlashda biz halollik, ochiqlik va mas’uliyat tamoyillariga amal qilamiz. Rasmiy dilerlik markazida siz kerakli ekspert maslahatini olishingiz, shaxsiy talablaringizga ko’ra avtomobilni sozlashingiz, shuningdek, sinov test-drayv uchun majvud modellardan birini tanlashingiz mumkin. </p>
+    
+            </div><!-- Col end -->
+    
+            <div class="col-lg-6 mt-5 mt-lg-0">
+              
+              <div id="page-slider" class="page-slider small-bg">
+    
+                  <div class="item">
+                    <div class="container">
+                        <div class="box-slider-content">
+                          <div class="box-slider-text">
+                            <img src="/static/assets/img/jetour.jpg" style="display: flex; width: 80%; height: 50%;">
+                          </div>    
+                        </div>
+                    </div>
+                  </div><!-- Item 1 end -->
+    
+                  
+              </div><!-- Page slider end-->          
+            
+    
+            </div><!-- Col end -->
+        </div><!-- Content row end -->
+    
+      </div><!-- Container end -->
+    </section><!-- Main container end -->
+
+  </main><!-- End #main -->
+
+  {% endblock content %}
