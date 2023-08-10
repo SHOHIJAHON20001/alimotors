@@ -78,9 +78,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <img src="{{ galareya.image.url }}" class="img-fluid">
             <div class="portfolio-info">
+              <a href="{% url 'gallery_details' galareya.id %}" class="details-link" title="Xarakteristikasini ko'rish">
                 <h4>{{ galareya.model }}</h4>
-                <a href="{{ galareya.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ car.model  }}"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'gallery_details' galareya.id %}" class="details-link" title="Xarakteristikasini ko'rish"><i class="bx bx-link"></i></a>
+              </a>
             </div>
           </div>
           {% endfor %}
